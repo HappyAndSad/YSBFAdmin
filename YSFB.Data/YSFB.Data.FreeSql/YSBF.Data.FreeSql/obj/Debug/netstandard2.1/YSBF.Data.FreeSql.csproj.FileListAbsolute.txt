@@ -1,0 +1,10 @@
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/bin/Debug/netstandard2.1/YSBF.Data.FreeSql.deps.json
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/bin/Debug/netstandard2.1/YSBF.Data.FreeSql.dll
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/bin/Debug/netstandard2.1/YSBF.Data.FreeSql.pdb
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.csproj.AssemblyReference.cache
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.GeneratedMSBuildEditorConfig.editorconfig
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.AssemblyInfoInputs.cache
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.AssemblyInfo.cs
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.csproj.CoreCompileInputs.cache
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.dll
+/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.FreeSql/YSBF.Data.FreeSql/obj/Debug/netstandard2.1/YSBF.Data.FreeSql.pdb

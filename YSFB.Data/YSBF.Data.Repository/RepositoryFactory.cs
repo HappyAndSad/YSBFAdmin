@@ -10,7 +10,7 @@ namespace YSBF.Data.Repository
     {
         public Repository BaseRepository()
         {
-
+            return new Repository();
         }
 
     }

@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "YSBF.Data.FreeSql/1.0.0": {
+        "dependencies": {
+          "FreeSql": "3.2.697"
+        },
+        "runtime": {
+          "YSBF.Data.FreeSql.dll": {}
+        }
+      },
+      "FreeSql/3.2.697": {
+        "runtime": {
+          "lib/netstandard2.1/FreeSql.dll": {
+            "assemblyVersion": "3.2.697.0",
+            "fileVersion": "3.2.697.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.1/zh-Hans/FreeSql.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "YSBF.Data.FreeSql/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FreeSql/3.2.697": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-38xWCzm2PkTdXCr6GbP5grqXD/MtSGvQ+TocDTiVAJT9arB3xAdpWv/p+gJ/1A1Tos3Roddc/0p/quP8XPJU9g==",
+      "path": "freesql/3.2.697",
+      "hashPath": "freesql.3.2.697.nupkg.sha512"
+    }
+  }
+}

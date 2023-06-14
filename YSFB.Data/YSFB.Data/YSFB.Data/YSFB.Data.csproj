@@ -5,7 +5,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\YSFB.Data\YSFB.Data\YSFB.Data.csproj" />
-  </ItemGroup>
 </Project>
