@@ -1,0 +1,258 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.Repository/YSFB.Data.Repository.csproj": {}
+  },
+  "projects": {
+    "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.Repository/YSFB.Data.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.Repository/YSFB.Data.Repository.csproj",
+        "projectName": "YSFB.Data.Repository",
+        "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.Repository/YSFB.Data.Repository.csproj",
+        "packagesPath": "/Users/flybear/.nuget/packages/",
+        "outputPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/flybear/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data/YSFB.Data.csproj": {
+                "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data/YSFB.Data.csproj"
+              },
+              "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj": {
+                "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj"
+              },
+              "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Util/YSFB.Util/YSFB.Util.csproj": {
+                "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Util/YSFB.Util/YSFB.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data/YSFB.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data/YSFB.Data.csproj",
+        "projectName": "YSFB.Data",
+        "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data/YSFB.Data.csproj",
+        "packagesPath": "/Users/flybear/.nuget/packages/",
+        "outputPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Data/YSFB.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/flybear/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj": {
+                "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "FreeSql": {
+              "target": "Package",
+              "version": "[3.2.697, )"
+            },
+            "FreeSql.DbContext": {
+              "target": "Package",
+              "version": "[3.2.697, )"
+            },
+            "FreeSql.Provider.MySql": {
+              "target": "Package",
+              "version": "[3.2.697, )"
+            },
+            "FreeSql.Repository": {
+              "target": "Package",
+              "version": "[3.2.697, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj",
+        "projectName": "YSFB.Entity",
+        "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/YSFB.Entity.csproj",
+        "packagesPath": "/Users/flybear/.nuget/packages/",
+        "outputPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Entity/YSFB.Entity/YSBF.Entity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/flybear/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Util/YSFB.Util/YSFB.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Util/YSFB.Util/YSFB.Util.csproj",
+        "projectName": "YSFB.Util",
+        "projectPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Util/YSFB.Util/YSFB.Util.csproj",
+        "packagesPath": "/Users/flybear/.nuget/packages/",
+        "outputPath": "/Users/flybear/Project/GitProject/C#/YSFBAdmin/YSFBAdmin/YSFB.Util/YSFB.Util/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/flybear/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

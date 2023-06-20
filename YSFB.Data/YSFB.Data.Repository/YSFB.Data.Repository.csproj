@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YSFB.Data\YSFB.Data.csproj" />
+    <ProjectReference Include="..\..\YSFB.Entity\YSFB.Entity\YSBF.Entity\YSFB.Entity.csproj" />
+    <ProjectReference Include="..\..\YSFB.Util\YSFB.Util\YSFB.Util.csproj" />
+  </ItemGroup>
+</Project>
