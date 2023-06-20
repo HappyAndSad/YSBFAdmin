@@ -52,17 +52,17 @@ namespace YSFB.Data.FS.Database
             return await freesql.Insert<T>(entitys).ExecuteAffrowsAsync();
         }
 
-        public async Task<int> Delete(S ids)
+        public async Task<int> Delete(S Id)
         {
             return await freesql
                     .Queryable<T>()
-                    .Where(entity => entity.Id == Ids)
+                    .Where(entity => entity.Id.Equals(Id))
                     .ToDelete()
                     .ExecuteAffrowsAsync();
         }
-        public async Task<int> Delete(IEnumerable<S> ids)
+        public async Task<int> Delete(IEnumerable<S> Ids)
         {
-            var guidlist = new List<S>(guids);
+            var guidlist = new List<S>(Ids);
             return await freesql
                     .Queryable<T>()
                     .Where(entity => guidlist.Contains(entity.Id))
@@ -79,16 +79,16 @@ namespace YSFB.Data.FS.Database
                     .ExecuteAffrowsAsync();
         }
 
-        public async Task<T> FindById(S ids)
+        public async Task<T> FindById(S Id)
         {
             return await freesql
                    .Queryable<T>()
-                   .Where(entity => entity.Id == Ids)
+                   .Where(entity => entity.Id.Equals(Id))
                    .FirstAsync<T>();
         }
-        public async Task<IEnumerable<T>> FindByIds(IEnumerable<S> ids)
+        public async Task<IEnumerable<T>> FindByIds(IEnumerable<S> Ids)
         {
-            var guidlist = new List<S>(guids);
+            var guidlist = new List<S>(Ids);
             return await freesql
                     .Queryable<T>()
                     .Where(entity => guidlist.Contains(entity.Id))

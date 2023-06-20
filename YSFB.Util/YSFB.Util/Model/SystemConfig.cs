@@ -15,6 +15,16 @@ namespace YSFB.Util.Model
         public SystemConfig()
         {
             DBSlowSqlLogTime = 5;
+            LoginMultiple = false;
+            LoginProvider = "";
+            ApiSite = "";
+            AllowCorsSite = "";
+            VirtualDirectory = "";
+            DBProvider = "";
+            DBConnectionString = "";
+            DBBackup = "";
+            CacheProvider = "";
+            RedisConnectionString = "";
         }
 
         /// <summary>

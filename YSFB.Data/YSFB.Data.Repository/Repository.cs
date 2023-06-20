@@ -90,7 +90,7 @@ namespace YSFB.Data.Repository
         }
         public async Task<IEnumerable<T>> FindByIds(IEnumerable<S> Ids)
         {
-            return await _db.FindById(Ids);
+            return await _db.FindByIds(Ids);
         }
         public async Task<IEnumerable<T>> FindList(Expression<Func<T, bool>> condition)
         {
