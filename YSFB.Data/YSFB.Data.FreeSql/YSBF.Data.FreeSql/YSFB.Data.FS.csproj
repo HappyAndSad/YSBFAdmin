@@ -19,7 +19,4 @@
     <Folder Include="DataBase\" />
     <Folder Include="DbContent\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\YSFB.Data\YSFB.Data\YSFB.Data.csproj" />
-  </ItemGroup>
 </Project>
