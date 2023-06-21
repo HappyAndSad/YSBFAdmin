@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>bin\Debug\netstandard2.1\YSFB.Data.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="Database\" />
   </ItemGroup>

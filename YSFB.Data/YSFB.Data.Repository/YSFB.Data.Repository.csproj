@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>bin\Debug\netstandard2.1\YSFB.Data.Repository.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\YSFB.Data\YSFB.Data.csproj" />
     <ProjectReference Include="..\..\YSFB.Entity\YSFB.Entity\YSBF.Entity\YSFB.Entity.csproj" />

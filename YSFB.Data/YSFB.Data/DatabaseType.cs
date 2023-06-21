@@ -12,6 +12,9 @@ namespace YSFB.Data
     /// </summary>
     public enum DatabaseType
     {
+        /// <summary>
+        /// //Mysql数据库类型
+        /// </summary>
         MySql
     }
 }

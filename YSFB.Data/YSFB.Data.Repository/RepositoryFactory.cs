@@ -14,13 +14,18 @@ namespace YSFB.Data.Repository
     /// <summary>
     /// 仓储工厂
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <typeparam name="S"></typeparam>
+    /// <typeparam name="T">实体模型</typeparam>
+    /// <typeparam name="S">主键</typeparam>
 	public class RepositoryFactory<T,S> where T:BaseEntity<S> where S:struct
-    {   
+    {
+        /// <summary>
+        /// 基础仓储库
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
 		public Repository<T,S> BaseRepository()
 		{
-            IDataBase<T,S> database = null;
+            IDataBase<T,S> database;
             string dbType = GlobalContext.SystemConfig.DBProvider;
             string dbConnectionString = GlobalContext.SystemConfig.DBConnectionString;
             switch (dbType)

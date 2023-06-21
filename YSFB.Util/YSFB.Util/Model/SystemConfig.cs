@@ -12,6 +12,9 @@ namespace YSFB.Util.Model
     /// </summary>
     public class SystemConfig
     {
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public SystemConfig()
         {
             DBSlowSqlLogTime = 5;
@@ -42,6 +45,9 @@ namespace YSFB.Util.Model
         /// </summary>
         public bool LoginMultiple { get; set; }
 
+        /// <summary>
+        /// 登陆提供程序
+        /// </summary>
         public string LoginProvider { get; set; }
 
         /// <summary>
@@ -64,8 +70,14 @@ namespace YSFB.Util.Model
         /// </summary>
         public string VirtualDirectory { get; set; }
 
+        /// <summary>
+        /// 数据库提供程序
+        /// </summary>
         public string DBProvider { get; set; }
 
+        /// <summary>
+        /// 数据库连接字符串
+        /// </summary>
         public string DBConnectionString { get; set; }
 
         /// <summary>
@@ -83,8 +95,14 @@ namespace YSFB.Util.Model
         /// </summary>
         public string DBBackup { get; set; }
 
+        /// <summary>
+        /// 缓存提供程序
+        /// </summary>
         public string CacheProvider { get; set; }
 
+        /// <summary>
+        /// Redis连接字符串
+        /// </summary>
         public string RedisConnectionString { get; set; }
     }
 }

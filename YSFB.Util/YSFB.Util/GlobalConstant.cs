@@ -12,6 +12,10 @@ namespace YSFB.Util
     /// </summary>
 	public class GlobalConstant
 	{
+
+        /// <summary>
+        /// 默认时间最小值
+        /// </summary>
         public static DateTime DefaultTime = DateTime.Parse("1970-01-01 00:00:00");
     }
 }

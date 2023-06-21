@@ -5,6 +5,7 @@
 // Copyright (c) 2023 MIT 
 // ********************************************************
 using System;
+using System.ComponentModel;
 using Newtonsoft.Json;
 
 namespace YSBF.Entity
@@ -12,40 +13,47 @@ namespace YSBF.Entity
 	/// <summary>
 	/// 根模型
 	/// </summary>
-	/// <typeparam name="">主键类型</typeparam>
+	/// <typeparam name="S">主键类型</typeparam>
 	public class BaseEntity<S> where S:struct
-	{	
-		/// <summary>
-		/// 主键
-		/// </summary>
-		public S Id { get; set; }
+	{
+        /// <summary>
+        /// 主键
+        /// </summary>
+        [Description("创建时间")]
+        public S Id { get; set; }
 
         /// <summary>
         /// 创建用户
         /// </summary>
-        public String CreateUser { get; set; }
+        public String BaseCreator { get; set; } = "";
 
-		/// <summary>
-		/// 创建时间
-		/// </summary>
-		public DateTime CreateTime { get; set; }
+        /// <summary>
+        /// 创建时间
+        /// </summary>
+        [Description("创建时间")]
+        public DateTime BaseCreateTime { get; set; }
 
         /// <summary>
         /// 更新用户
         /// </summary>
-        public String UpdateUser { get; set; }
+        public String BaseModifier { get; set; } = "";
 
 		/// <summary>
-		/// 更新时间
+		/// 修改时间
 		/// </summary>
 		[JsonExtensionData]
-        public DateTime UpdateTime { get; set; }
+        public DateTime BaseModifyTime { get; set; }
 
         /// <summary>
         /// 是否删除
         /// </summary>
         [JsonIgnore]
-        public Boolean IsDelete { get; set;}
+        public Boolean BaseIsDelete { get; set;}
+
+        /// <summary>
+        /// 数据更新版本，控制并发
+        /// </summary>
+        public int? BaseVersion { get; set; }
     }
 }
 
