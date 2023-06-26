@@ -4,7 +4,6 @@
 // Author: HappyAndSad 
 // OpenSource: MIT 
 // Copyright (c) 2023
-//
 // ********************************************************
 using System;
 using Newtonsoft.Json;

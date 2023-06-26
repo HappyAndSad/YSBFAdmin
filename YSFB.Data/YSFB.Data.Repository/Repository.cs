@@ -16,22 +16,22 @@ namespace YSFB.Data.Repository
     /// <summary>
     /// 业务层实际调用的仓储
     /// </summary>
-    /// <typeparam name="T">模型</typeparam>
-    /// <typeparam name="S">主键</typeparam>
-	public class Repository<T,S> where T : BaseEntity<S> where S:struct
+    /// <typeparam name="TEntity">模型</typeparam>
+    /// <typeparam name="TKey">主键</typeparam>
+	public class Repository<TEntity,TKey> where TEntity : BaseEntity<TKey> where TKey:struct
 	{
         /// <summary>
         /// 数据库实现对象
         /// </summary>
-		private IDataBase<T,S> _db;
+		private IDataBase<TEntity,TKey> _db;
 
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="dataBase"></param>
-		public Repository(IDataBase<T,S> dataBase)
+		public Repository(IDataBase<TEntity,TKey> dataBase)
 		{
-			this._db = dataBase;
+            this._db = dataBase;
         }
 
         #region CURD
@@ -40,7 +40,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="entity">实体</param>
         /// <returns></returns>
-        public async Task<int> Insert(T entity)
+        public async Task<int> Insert(TEntity entity)
         {
             return await _db.Update(entity);
         }
@@ -49,7 +49,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="entitys">实体列表</param>
         /// <returns></returns>
-        public async Task<int> Insert(IEnumerable<T> entitys)
+        public async Task<int> Insert(IEnumerable<TEntity> entitys)
         {
             return await _db.Update(entitys);
         }
@@ -59,7 +59,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="entity">实体</param>
         /// <returns></returns>
-        public async Task<int> Update(T entity)
+        public async Task<int> Update(TEntity entity)
         {
             return await _db.Update(entity);
         }
@@ -68,7 +68,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="entitys">实体列表</param>
         /// <returns></returns>
-        public async Task<int> Update(IEnumerable<T> entitys)
+        public async Task<int> Update(IEnumerable<TEntity> entitys)
         {
             return await _db.Update(entitys);
         }
@@ -78,7 +78,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="Id">主键</param>
         /// <returns></returns>
-        public async Task<int> Delete(S Id)
+        public async Task<int> Delete(TKey Id)
         {
             return await _db.Delete(Id);
         }
@@ -87,7 +87,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="Ids">主键集合</param>
         /// <returns></returns>
-        public async Task<int> Delete(IEnumerable<S> Ids)
+        public async Task<int> Delete(IEnumerable<TKey> Ids)
         {
             return await _db.Delete(Ids);
         }
@@ -96,7 +96,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="condition">lambda表达式</param>
         /// <returns></returns>
-        public async Task<int> Delete(Expression<Func<T, bool>> condition)
+        public async Task<int> Delete(Expression<Func<TEntity, bool>> condition)
         {
             return await _db.Delete(condition);
         }
@@ -106,7 +106,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="Id">主键</param>
         /// <returns></returns>
-        public async Task<T> FindById(S Id)
+        public async Task<TEntity> FindById(TKey Id)
         {
             return await _db.FindById(Id);
         }
@@ -115,7 +115,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="Ids">主键集合</param>
         /// <returns></returns>
-        public async Task<IEnumerable<T>> FindByIds(IEnumerable<S> Ids)
+        public async Task<IEnumerable<TEntity>> FindByIds(IEnumerable<TKey> Ids)
         {
             return await _db.FindByIds(Ids);
         }
@@ -124,7 +124,7 @@ namespace YSFB.Data.Repository
         /// </summary>
         /// <param name="condition">lambda表达式</param>
         /// <returns></returns>
-        public async Task<IEnumerable<T>> FindList(Expression<Func<T, bool>> condition)
+        public async Task<IEnumerable<TEntity>> FindList(Expression<Func<TEntity, bool>> condition)
         {
             return await _db.FindList(condition);
         }
@@ -134,7 +134,7 @@ namespace YSFB.Data.Repository
         /// <param name="pageIndex"></param>
         /// <param name="pageSize"></param>
         /// <returns></returns>
-        public async Task<(long total, IEnumerable<T>)> FindList(int pageIndex, int pageSize)
+        public async Task<(long total, IEnumerable<TEntity>)> FindList(int pageIndex, int pageSize)
         {
             return await _db.FindList(pageIndex, pageSize);
         }

@@ -10,9 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Database\" />
+    <None Remove="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FreeSql" Version="3.2.697" />

@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `SysDataDict` (
 
 DROP TABLE IF EXISTS `SysDataDictDetail`;
 CREATE TABLE IF NOT EXISTS `SysDataDictDetail` (
-  `Id`                  bigint(20)      NOT NULL,
+  `Id`                bigint(20)      NOT NULL,
   `BaseIsDelete`      int(11)         NOT NULL,
   `BaseCreateTime`    datetime        NOT NULL,
   `BaseModifyTime`    datetime        NOT NULL,
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `SysDepartment` (
   `BaseCreator`				char(36)     	NOT NULL,       
   `BaseModifier`			char(36)      	NOT NULL,
   `BaseVersion`				int(11)         NOT NULL,
-  `ParentId`				char(36)       NOT NULL       COMMENT '父部门Id(空表示是根部门)',
+  `ParentId`				char(36)        NULL       COMMENT '父部门Id(空表示是根部门)',
   `DepartmentName`			varchar(50)     NOT NULL       COMMENT '部门名称',
   `Telephone`				varchar(50)     NOT NULL       COMMENT '部门电话',
   `Fax`						varchar(50)     NOT NULL       COMMENT '部门传真',

@@ -14,8 +14,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="SystemManage\" />
+    <None Remove="OrganizationManage\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SystemManage\" />
+    <Folder Include="OrganizationManage\" />
   </ItemGroup>
 </Project>
