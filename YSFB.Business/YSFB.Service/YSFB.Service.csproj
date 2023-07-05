@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="OrganizationManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OrganizationManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\YSFB.Data\YSFB.Data.Repository\YSFB.Data.Repository.csproj" />
+    <ProjectReference Include="..\..\YSFB.Entity\YSFB.Entity\YSBF.Entity\YSFB.Entity.csproj" />
+    <ProjectReference Include="..\..\YSFB.Entity\YSFB.Entity\YSBF.Model\YSFB.Model\YSFB.Model.csproj" />
+  </ItemGroup>
+</Project>

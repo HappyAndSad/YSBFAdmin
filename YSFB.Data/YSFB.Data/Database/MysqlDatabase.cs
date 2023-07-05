@@ -84,7 +84,10 @@ namespace YSFB.Data.FS.Database
                 lock (_configEntityLock)
                 {
                     while (_configEntityQueues.TryDequeue(out var cei))
-                        Orm.CodeFirst.ConfigEntity(cei.EntityType, cei.Fluent);
+                    {
+                        _resoleOrm.Invoke() .CodeFirst.ConfigEntity(cei.EntityType, cei.Fluent);
+
+                    }
                 }
             }
         }

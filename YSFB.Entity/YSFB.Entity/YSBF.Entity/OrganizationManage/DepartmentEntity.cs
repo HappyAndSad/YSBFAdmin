@@ -7,9 +7,7 @@
 // ********************************************************
 using System;
 using FreeSql.DataAnnotations;
-using Newtonsoft.Json;
 using YSBF.Entity;
-using static System.Net.Mime.MediaTypeNames;
 
 
 namespace YSFB.Entity.OrganizationManage
@@ -23,35 +21,35 @@ namespace YSFB.Entity.OrganizationManage
         /// <summary>
         /// 父部门Id(空表示是根部门)
         /// </summary>
-        public Guid? ParentId { get; set; }
+        public Guid ParentId { get; set; }
         /// <summary>
         /// 部门名称
         /// </summary>
-        public string? DepartmentName { get; set; }
+        public string DepartmentName { get; set; } = "";
         /// <summary>
         /// 部门电话
         /// </summary>
-        public string? Telephone { get; set; }
+        public string Telephone { get; set; } = "";
         /// <summary>
         /// 部门传真
         /// </summary>
-        public string? Fax { get; set; }
+        public string Fax { get; set; } = "";
         /// <summary>
         /// 部门Email
         /// </summary>
-        public string? Email { get; set; }
+        public string Email { get; set; } = "";
         /// <summary>
         /// 部门负责人Id
         /// </summary>
-        public Guid? PrincipalId { get; set; }
+        public Guid PrincipalId { get; set; }
         /// <summary>
         /// 部门排序
         /// </summary>
-        public Guid? DepartmentSort { get; set; }
+        public long DepartmentSort { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
-        public string? Remark { get; set; }
+        public string Remark { get; set; } = "";
     }
 }
 
