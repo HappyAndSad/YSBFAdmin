@@ -23,7 +23,7 @@ namespace YSFB.Data.Repository
         /// <summary>
         /// 数据库实现对象
         /// </summary>
-		private IDataBase<TEntity,TKey> _db;
+		public IDataBase<TEntity,TKey> DB;
 
         /// <summary>
         /// 构造函数
@@ -31,7 +31,7 @@ namespace YSFB.Data.Repository
         /// <param name="dataBase"></param>
 		public Repository(IDataBase<TEntity,TKey> dataBase)
 		{
-            this._db = dataBase;
+            this.DB = dataBase;
         }
 
         #region CURD
@@ -42,7 +42,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Insert(TEntity entity)
         {
-            return await _db.Update(entity);
+            return await DB.Insert(entity);
         }
         /// <summary>
         /// 批量插入数据
@@ -51,7 +51,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Insert(IEnumerable<TEntity> entitys)
         {
-            return await _db.Update(entitys);
+            return await DB.Insert(entitys);
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Update(TEntity entity)
         {
-            return await _db.Update(entity);
+            return await DB.Update(entity);
         }
         /// <summary>
         /// 批量更新数据
@@ -70,7 +70,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Update(IEnumerable<TEntity> entitys)
         {
-            return await _db.Update(entitys);
+            return await DB.Update(entitys);
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Delete(TKey Id)
         {
-            return await _db.Delete(Id);
+            return await DB.Delete(Id);
         }
         /// <summary>
         /// 批量删除数据
@@ -89,7 +89,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Delete(IEnumerable<TKey> Ids)
         {
-            return await _db.Delete(Ids);
+            return await DB.Delete(Ids);
         }
         /// <summary>
         /// 批量删除数据
@@ -98,7 +98,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<int> Delete(Expression<Func<TEntity, bool>> condition)
         {
-            return await _db.Delete(condition);
+            return await DB.Delete(condition);
         }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<TEntity> FindById(TKey Id)
         {
-            return await _db.FindById(Id);
+            return await DB.FindById(Id);
         }
         /// <summary>
         /// 根据主键查询列表
@@ -117,7 +117,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<IEnumerable<TEntity>> FindByIds(IEnumerable<TKey> Ids)
         {
-            return await _db.FindByIds(Ids);
+            return await DB.FindByIds(Ids);
         }
         /// <summary>
         /// 根据lambda表达式查询列表
@@ -126,7 +126,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<IEnumerable<TEntity>> FindList(Expression<Func<TEntity, bool>> condition)
         {
-            return await _db.FindList(condition);
+            return await DB.FindList(condition);
         }
         /// <summary>
         /// 分页查询列表数据
@@ -136,7 +136,7 @@ namespace YSFB.Data.Repository
         /// <returns></returns>
         public async Task<(long total, IEnumerable<TEntity>)> FindList(int pageIndex, int pageSize)
         {
-            return await _db.FindList(pageIndex, pageSize);
+            return await DB.FindList(pageIndex, pageSize);
         }
         #endregion
 

@@ -27,7 +27,7 @@ namespace YSFB.Data
         /// <summary>
         /// 数据库上下文
         /// </summary>
-		public DbContext dbcontent { get;}
+		public DbContext Dbcontent { get;}
 
 		#region CURD
         /// <summary>

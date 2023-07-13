@@ -30,7 +30,7 @@ namespace YSFB.Data.FS.Database
         /// <summary>
         /// 数据库上下文
         /// </summary>
-        public DbContext dbcontent => Orm.CreateDbContext();
+        public DbContext Dbcontent => Orm.CreateDbContext();
 
         /// <summary>
         /// 底层ORM实现

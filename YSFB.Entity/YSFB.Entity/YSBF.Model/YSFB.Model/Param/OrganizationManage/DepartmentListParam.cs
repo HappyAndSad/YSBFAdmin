@@ -6,17 +6,19 @@
 // Copyright (c) 2023
 // ********************************************************
 using System;
+using System.Collections.Generic;
+
 namespace YSFB.Model.Param
 {
     /// <summary>
-    /// 部门查询参数
+    /// 部门请求参数
     /// </summary>
     public class DepartmentListParam
     {
         /// <summary>
         /// 主键查询
         /// </summary>
-        public string Ids { get; set; } = "";
+        public List<string> Ids { get; set; } = new List<string>();
         /// <summary>
         /// 部门名称
         /// </summary>
